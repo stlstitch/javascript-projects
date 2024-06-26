@@ -1,11 +1,18 @@
-// Declare and assign the variables below
+// 1. Declare and assign the variables here:
+let shuttleName = 'Determination';
+let shuttleSpeed = 17500;
+let distanceToMarsKilo = 225000000;
+let distanceToMoonKilo = 384400;
+const mPk = 0.621;
 
-// Use console.log to print the 'typeof' each variable. Print one item per line.
+let milesToMars = distanceToMarsKilo * mPk;
+let hoursToMars = distanceToMarsKilo * shuttleSpeed;
+let daysToMars = hoursToMars / 24;
 
-// Calculate a space mission below
+let milesToMoon = distanceToMoonKilo * mPk;
+let hoursToMoon = distanceToMoonKilo * shuttleSpeed;
+let daysToMoon = hoursToMoon / 24;
 
-// Print the results of the space mission calculations below
+console.log(shuttleName + " will take " + daysToMars + " days to reach the Mars.");
 
-// Calculate a trip to the moon below
-
-// Print the results of the trip to the moon below
+console.log(shuttleName + " will take " + daysToMoon + " days to reach the Moon.");
